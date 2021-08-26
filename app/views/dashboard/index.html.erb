@@ -1,2 +1,47 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<div class='container'>
+    <h1 class= 'text-center  my-3'>CoffeeShop Dashboard</h1>
+    <div class='my-5'>
+        <h2>Ventas mensuales de los últimos 12 meses</h2>
+        <%= column_chart @sales_amount_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas mensual de los últimos 12 meses</h2>
+        <%= column_chart @sales_count_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Promedio de venta mensual de los últimos 12 meses</h2>
+        <%= column_chart @sales_average_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el origen del café en los últimos 12 meses</h2>
+        <%= pie_chart @sales_origin_12_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el origen del café en los últimos 6 meses</h2>
+        <%= pie_chart @sales_origin_6_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el origen del café en los últimos 3 meses</h2>
+        <%= pie_chart @sales_origin_3_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el origen del café en el último mes</h2>
+        <%= pie_chart @sales_origin_1_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el la mezcla del café en los últimos 12 meses</h2>
+        <%= pie_chart @sales_blend_name_12_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el la mezcla del café en los últimos 6 meses</h2>
+        <%= pie_chart @sales_blend_name_6_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el la mezcla del café en los últimos 3 meses</h2>
+        <%= pie_chart @sales_blend_name_3_month %>
+    <div>
+    <div class='my-5'>
+        <h2>Cantidad de ventas según el la mezcla del café en el últimos mes</h2>
+        <%= pie_chart @sales_blend_name_1_month %>
+    <div>
+<div>

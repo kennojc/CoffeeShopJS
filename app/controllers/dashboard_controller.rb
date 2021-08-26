@@ -7,9 +7,9 @@ class DashboardController < ApplicationController
     @sales_origin_6_month = Sale.where('date >= ?', 6.month.ago.to_datetime).group(:origin).count
     @sales_origin_3_month = Sale.where('date >= ?', 3.month.ago.to_datetime).group(:origin).count
     @sales_origin_1_month = Sale.where('date >= ?', 1.month.ago.to_datetime).group(:origin).count
-    @sales_blend_name_12_month = Sale.where('date >= ?', 1.year.ago.to_datetime).group(:blend_name).count
-    @sales_blend_name_6_month = Sale.where('date >= ?', 6.month.ago.to_datetime).group(:blend_name).count
-    @sales_blend_name_3_month = Sale.where('date >= ?', 3.month.ago.to_datetime).group(:blend_name).count
-    @sales_blend_name_1_month = Sale.where('date >= ?', 1.month.ago.to_datetime).group(:blend_name).count
+    @sales_blend_name_12_month = Sale.where('date >= ?', 1.year.ago.to_datetime).group(:blend).count
+    @sales_blend_name_6_month = Sale.where('date >= ?', 6.month.ago.to_datetime).group(:blend).count
+    @sales_blend_name_3_month = Sale.where('date >= ?', 3.month.ago.to_datetime).group(:blend).count
+    @sales_blend_name_1_month = Sale.where('date >= ?', 1.month.ago.to_datetime).group(:blend).count
   end
 end

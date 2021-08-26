@@ -10,6 +10,6 @@
         amount: rand(1990..5490),
         origin: Faker::Coffee.origin,
         blend: Faker::Coffee.blend_name,
-        date: Faker::Date.between(from: Date.new('2019-1-1'), to: Date.today)
+        date: Faker::Date.between(from: '2019-1-1', to: Date.today)
     )
 end
